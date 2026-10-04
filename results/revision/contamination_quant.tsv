@@ -1,0 +1,31 @@
+section	item	value	detail
+marker_coverage	hepatocyte	12/12	ALB,APOB,APOA1,APOA2,SERPINA1,HP,FGG,TTR,GC,ORM1,CYP2E1,CYP3A4
+marker_coverage	adipocyte	8/8	ADIPOQ,PLIN1,FABP4,CD36,LPL,LIPE,CIDEC,ADIRF
+marker_coverage	mesothelial	5/5	MSLN,WT1,UPK3B,CALB2,LRRN4
+marker_coverage	epithelial	3/3	EPCAM,KRT8,KRT19
+score_specificity	hepatocyte_KW_p	0.001198	primary tumor=-0.14; peritoneal metastasis=-0.19; liver metastasis=3.29; lymph node metastasis=-0.14; ovarium metastasis=-0.22
+score_specificity	hepatocyte_liver_vs_PT	dmedian=3.43, wilcox_p=8.9e-07	""
+score_specificity	adipocyte_KW_p	1.892e-07	primary tumor=-0.68; peritoneal metastasis=0.42; liver metastasis=-0.63; lymph node metastasis=-0.22; ovarium metastasis=-0.55
+score_specificity	adipocyte_peritoneal_vs_PT	dmedian=1.10, wilcox_p=7.74e-08	""
+score_specificity	mesothelial_KW_p	0.009876	primary tumor=-0.27; peritoneal metastasis=0.19; liver metastasis=-0.09; lymph node metastasis=-0.39; ovarium metastasis=0.26
+score_specificity	mesothelial_peritoneal_vs_PT	dmedian=0.46, wilcox_p=0.00185	""
+score_specificity	epithelial_KW_p	0.352	primary tumor=0.2; peritoneal metastasis=0.2; liver metastasis=0.44; lymph node metastasis=0.11; ovarium metastasis=-1.14
+score_specificity	epithelial_peritoneal_vs_PT	dmedian=0.00, wilcox_p=0.606	""
+LM_core_composition	hepatic_secreted_acute_phase	35/57 (61%)	GC,FGG,APOC3,F9,FGA,CPB2,APOA1,HRG,MBL2,ORM1,APOA2,C9,APOH,IGFBP1,FGB,FGL1,APOB,COLEC11,ORM2,ASGR2,HPR,HP,ITIH3,APOM,C5,CP,SERPINA3,MST1,C6,TTR,SERPINA5,F10,C4BPA,SERPINA1,PON3
+LM_core_composition	hepatic_metabolic_xenobiotic	21/57 (37%)	CYP2E1,AKR1D1,CYP2C8,ARG1,ALDH8A1,GYS2,FMO3,PAH,RGN,CBS,GATM,CPS1,AOX1,ABCB4,PIPOX,ABAT,MTTP,HSD11B1,CES1,ABCG5,CYP4F3
+LM_core_composition	other	1/57 (2%)	GAS2
+LM_core_effect_vs_liverSpec	spearman(beta, hep_cor)	rho=0.635, p=1.12e-07, n=57	""
+LM_core_hepCor_summary	median (IQR)	0.33 (0.25-0.48)	12/57 genes rho>0.5
+PM_core_composition	adipocyte_lipid	10/49 (20%), median_beta=1.47	FABP4,CD36,PLAC9,RBP7,LIPE,LPL,EBF2,MEDAG,VIT,NNAT
+PM_core_composition	fibroblast_ECM_stromal	16/49 (33%), median_beta=1.40	ADAMTS15,SRPX,PI16,SLIT3,OLFML2B,MFAP5,GALNT13,FLRT2,OGN,PDGFRL,COLEC12,CPXM1,CHRDL1,C16orf89,ADAMTS16,SFRP2
+PM_core_composition	other_neural_misc	23/49 (47%), median_beta=1.14	CADM3,KCNAB1,KCNA1,NGF,NPR1,FMO1,NTRK2,MEOX2,MYOZ3,PRICKLE1,LRRN2,LRRN1,DCLK1,ANK2,BEND6,ADAM22,TWIST2,TSHZ2,BOC,NTRK3,NRK,SUSD5,TACR1
+PM_core_effect_vs_adipoSpec	spearman(beta, adipo_cor)	rho=0.269, p=0.0614, n=49	""
+PM_core_adipoCor_summary	median (IQR)	0.53 (0.48-0.60)	33/49 genes rho>0.5
+PM_core_mesoCor_summary	median (IQR)	0.34 (0.18-0.52)	13/49 genes rho>0.5
+purity_retention	LM_core	57/57 (100%) retained after EPCAM/KRT8/KRT19 adjustment	""
+purity_retention	PM_core	34/49 (69%) retained after EPCAM/KRT8/KRT19 adjustment	PLAC9,SRPX,NPR1,FMO1,MYOZ3,VIT,LRRN1,FLRT2,OGN,TWIST2,TSHZ2,NTRK3,PDGFRL,SUSD5,TACR1
+LM_attribution	per_gene_fraction_median	1.19 (IQR 1.10-1.25), n=57	52/57 genes frac>=1; 57/57 genes frac>=0.5
+LM_attribution	score_level	observed_d=2.38, predicted_from_hepScore=2.82, frac=1.18	hepScore d(LM-PT)=3.43 (z units)
+PM_attribution_adipocyte	per_gene_fraction_median	0.97 (IQR 0.89-1.05), n=49	20/49 genes frac>=1; 49/49 genes frac>=0.5; adipoScore d(PM-PT)=1.10
+PM_attribution_adipocyte	score_level	observed_d=0.77, predicted_from_adipoScore=0.74, frac=0.97	""
+LM_attribution_cross	adipoScore_control	predicted_from_adipoScore=-0.00 vs observed=2.38 (frac=-0.00); adipoScore d(LM-PT)=0.04	""

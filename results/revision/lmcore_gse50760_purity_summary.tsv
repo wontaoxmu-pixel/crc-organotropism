@@ -1,0 +1,12 @@
+metric	value
+cohort	GSE50760
+pairs	18
+genes_after_filter	13921
+lm_core_total	57
+lm_core_detectable	57
+lm_core_missing	""
+sig_raw_n	57
+sig_raw_pct	100
+sig_adj_n	57
+sig_adj_pct	100
+gse190609_reference_retention	57/57 (100%)

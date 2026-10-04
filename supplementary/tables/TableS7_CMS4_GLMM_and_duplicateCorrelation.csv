@@ -1,0 +1,27 @@
+section,analysis,term,n_patients,n_samples,estimate,ci_lo,ci_hi,p_value,detail
+design_check,scripts11_design,~0+organ+patient,12,113,16,,,,ncol=16; 患者作为加性固定效应阻断；同患者多区域(含35个PT区域)共享患者截距；满秩可估计
+contrast_composition,PM_vs_PT,samples/patients contributing to contrast,12,94,,,,,peritoneal metastasis:59样本/12患者; primary tumor:35样本/12患者; limma模型同时拟合全部113样本/12患者
+contrast_composition,LM_vs_PT,samples/patients contributing to contrast,12,41,,,,,liver metastasis:6样本/6患者; primary tumor:35样本/12患者; limma模型同时拟合全部113样本/12患者
+contrast_composition,PM_vs_LM,samples/patients contributing to contrast,12,65,,,,,peritoneal metastasis:59样本/12患者; liver metastasis:6样本/6患者; limma模型同时拟合全部113样本/12患者
+per_patient_PM,patient_1,PM CMS4 (nearest),1,10,0.3,,,,n_PM=10; n_CMS4=3; any_CMS4=TRUE; majority_CMS4=FALSE; threshold版 3/10 typable CMS4
+per_patient_PM,patient_2,PM CMS4 (nearest),1,2,0,,,,n_PM=2; n_CMS4=0; any_CMS4=FALSE; majority_CMS4=FALSE; threshold版 0/0 typable CMS4
+per_patient_PM,patient_3,PM CMS4 (nearest),1,12,0.0833,,,,n_PM=12; n_CMS4=1; any_CMS4=TRUE; majority_CMS4=FALSE; threshold版 0/8 typable CMS4
+per_patient_PM,patient_4,PM CMS4 (nearest),1,4,1,,,,n_PM=4; n_CMS4=4; any_CMS4=TRUE; majority_CMS4=TRUE; threshold版 3/3 typable CMS4
+per_patient_PM,patient_5,PM CMS4 (nearest),1,2,1,,,,n_PM=2; n_CMS4=2; any_CMS4=TRUE; majority_CMS4=TRUE; threshold版 1/1 typable CMS4
+per_patient_PM,patient_6,PM CMS4 (nearest),1,2,0,,,,n_PM=2; n_CMS4=0; any_CMS4=FALSE; majority_CMS4=FALSE; threshold版 0/0 typable CMS4
+per_patient_PM,patient_7,PM CMS4 (nearest),1,2,0,,,,n_PM=2; n_CMS4=0; any_CMS4=FALSE; majority_CMS4=FALSE; threshold版 0/0 typable CMS4
+per_patient_PM,patient_8,PM CMS4 (nearest),1,1,1,,,,n_PM=1; n_CMS4=1; any_CMS4=TRUE; majority_CMS4=TRUE; threshold版 0/0 typable CMS4
+per_patient_PM,patient_9,PM CMS4 (nearest),1,4,0.75,,,,n_PM=4; n_CMS4=3; any_CMS4=TRUE; majority_CMS4=TRUE; threshold版 2/3 typable CMS4
+per_patient_PM,patient_10,PM CMS4 (nearest),1,9,0.7778,,,,n_PM=9; n_CMS4=7; any_CMS4=TRUE; majority_CMS4=TRUE; threshold版 6/6 typable CMS4
+per_patient_PM,patient_11,PM CMS4 (nearest),1,7,0.4286,,,,n_PM=7; n_CMS4=3; any_CMS4=TRUE; majority_CMS4=FALSE; threshold版 3/6 typable CMS4
+per_patient_PM,patient_12,PM CMS4 (nearest),1,4,1,,,,n_PM=4; n_CMS4=4; any_CMS4=TRUE; majority_CMS4=TRUE; threshold版 4/4 typable CMS4
+summary,PM_CMS4_per_patient,patients with >=1 CMS4 PM,12,,9,,,,9/12 患者至少1个CMS4 PM; 6/12 患者PM中CMS4占多数(>=50%)
+summary,PM_CMS4_proportions,patient-level mean vs sample-level,,,0.5283,,,,患者级均值=0.528; 样本级=28/59=0.475; LM样本级=1/6=0.167; LM来自6个患者
+patient_level_test,PM_vs_PT,paired Wilcoxon on per-patient CMS4 proportion,12,,0.2639,,,0.08281,中位差(PM-PT)=0.264; 8正/3负/1零
+patient_level_test,PM_vs_PT,McNemar exact on majority-CMS4,12,,,,,0.375,PM多数CMS4且PT非=4; 反向=1
+patient_level_test,PM_vs_LM,paired Wilcoxon (PM prop vs LM 0/1),6,,0.525,,,0.09751,"LM样本=6 来自6患者, CMS4 LM=1; PM比例>LM: 4/6"
+patient_level_test,PM_vs_LM,McNemar exact (PM majority vs LM CMS4),6,,,,,0.25,PM多数CMS4且LM非=3; 反向=0
+glmm,PM_vs_PT,organperitoneal metastasis,12,94,3.721,1.226,11.292,0.02034,OR(CMS4|peritoneal metastasis vs primary tumor)=3.72; singular=FALSE; 随机截距SD=1.16
+glmm,PM_vs_LM,organperitoneal metastasis,12,65,32.565,0.836,1268.626,0.06231,OR(CMS4|peritoneal metastasis vs liver metastasis)=32.57; singular=FALSE; 随机截距SD=2.16
+sensitivity_threshold,PM_vs_PT,"paired Wilcoxon, posterior>=0.5 typable only",8,74,0.5,,,0.05848,可分型样本74/113 (65%); 患者级PM CMS4比例均值=0.683 vs PT=0.271
+blocking_sensitivity,PM_vs_PT,duplicateCorrelation vs fixed-effect patient,12,113,0.3672,,,,"患者内consensus correlation=0.367; 显著基因(FDR<0.05,|logFC|>=1): 固定效应1664 vs dupCor1569 (交集1535, Jaccard=0.904); logFC Spearman=0.9971"

@@ -1,0 +1,13 @@
+data/
+.planning/
+Rplots.pdf
+requirements.txt
+/01_调研报告_肿瘤生信论文套路与选题_2026-10-03.md
+/02_数据可得性盘点_选题1选题2_2026-10-03.md
+/03_技术路线设计_选题1_TCGA-THCA切片预测分子分型.md
+/04_选题盘点_乳腺与消化道_逐项可行性_2026-10-03.md
+/05_技术路线设计_选题10_CRC转移器官趋向性.md
+scripts/00_get_manifest.py
+scripts/01_download_slides.py
+scripts/02_tile_qc.py
+.DS_Store

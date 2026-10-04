@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "r-patchwork",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 1,
+    "exemptions": 1
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "r-patchwork",
+    "figure": {
+      "width_pt": 510.236220472441,
+      "height_pt": 297.637795275591
+    },
+    "panels": [
+      {
+        "id": "a",
+        "bbox_pt": [
+          55.31002,
+          42.1090825,
+          211.924336335433,
+          262.174034507874
+        ],
+        "grid_id": "patchwork-grid-1",
+        "row_start": 10,
+        "row_stop": 29,
+        "col_start": 8,
+        "col_stop": 9
+      },
+      {
+        "id": "b",
+        "bbox_pt": [
+          338.829168835433,
+          172.829672253937,
+          461.883274527559,
+          262.174034507874
+        ],
+        "grid_id": "patchwork-grid-1",
+        "row_start": 10,
+        "row_stop": 11,
+        "col_start": 23,
+        "col_stop": 24
+      },
+      {
+        "id": "c",
+        "bbox_pt": [
+          338.829168835433,
+          42.1090825,
+          461.883274527559,
+          131.453444753937
+        ],
+        "grid_id": "patchwork-grid-1",
+        "row_start": 28,
+        "row_stop": 29,
+        "col_start": 23,
+        "col_stop": 24
+      }
+    ],
+    "row_groups": [],
+    "column_groups": [
+      {
+        "id": "column-1",
+        "panels": [
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "boundary_groups": [
+      {
+        "id": "inferred-shared-top-1",
+        "edge": "top",
+        "panels": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "inferred-shared-bottom-1",
+        "edge": "bottom",
+        "panels": [
+          "a",
+          "c"
+        ]
+      }
+    ],
+    "exemptions": [
+      {
+        "panels": [
+          "a"
+        ],
+        "checks": [
+          "all"
+        ],
+        "reason": "Hero panel A intentionally spans the full left column (both grid rows); asymmetric design, excluded from equal-size comparisons."
+      }
+    ]
+  },
+  "findings": []
+}

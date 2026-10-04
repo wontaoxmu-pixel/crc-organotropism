@@ -1,0 +1,9 @@
+role	display_id	title	source_file	submission_file	format	pixel_width	pixel_height	dpi	width_mm	height_mm
+main_figure	Figure1	Study design and CMS4 corroboration	scripts/20_M4_fig1_*.R	main_figures/Figure1.png	png	4251	2480	600	180.0	105.0
+main_figure	Figure1	Study design and CMS4 corroboration	scripts/20_M4_fig1_*.R	main_figures/Figure1.pdf	pdf	vector	vector	vector	180.0	105.0
+main_figure	Figure2	Metastatic-site niche transcriptomic imprint (meta-analysis)	scripts/21_M4_fig2_*.R	main_figures/Figure2.png	png	4251	4015	600	180.0	170.0
+main_figure	Figure2	Metastatic-site niche transcriptomic imprint (meta-analysis)	scripts/21_M4_fig2_*.R	main_figures/Figure2.pdf	pdf	vector	vector	vector	180.0	170.0
+main_figure	Figure3	MSK-MET genomic axis and overall survival	scripts/22_M4_fig3_*.R	main_figures/Figure3.png	png	4251	3590	600	180.0	152.0
+main_figure	Figure3	MSK-MET genomic axis and overall survival	scripts/22_M4_fig3_*.R	main_figures/Figure3.pdf	pdf	vector	vector	vector	180.0	152.0
+main_figure	Figure4	Negative primary-tumour prediction and hepatocyte contamination warning	scripts/23_M4_fig4_*.R	main_figures/Figure4.png	png	4251	3543	600	180.0	150.0
+main_figure	Figure4	Negative primary-tumour prediction and hepatocyte contamination warning	scripts/23_M4_fig4_*.R	main_figures/Figure4.pdf	pdf	vector	vector	vector	180.0	150.0
