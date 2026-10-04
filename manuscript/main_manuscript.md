@@ -4,11 +4,18 @@
 
 **Running title:** Niche imprint and APC depletion in CRC metastasis
 
-**Authors:** [Author list to be completed]
+**Authors:** Tao Wang, MD^1,†,\*^; Hao Yi^2,†^; Peng Qi, Prof.^1^
 
-**Affiliations:** [Affiliations to be completed]
+^†^These authors contributed equally to this work.
 
-**Corresponding author:** [Name, address, email to be completed]
+**Affiliations:**
+
+1. Department of Thyroid and Breast Surgery, Hubei No. 3 People's Hospital of Jianghan University, No. 26 Zhongshan Avenue, Qiaokou District, Wuhan 430033, Hubei, China
+2. Graduate School, Hubei University of Medicine, No. 30 Renmin South Road, Shiyan 442000, Hubei, China
+
+**ORCID:** Tao Wang: 0000-0001-9415-7524; Hao Yi: 0009-0007-7199-4291; Peng Qi: 0000-0002-2839-8933.
+
+**Corresponding author:** Tao Wang, MD, Department of Thyroid and Breast Surgery, Hubei No. 3 People's Hospital of Jianghan University, No. 26 Zhongshan Avenue, Qiaokou District, Wuhan 430033, Hubei, China. Email: wangt_zsyy@126.com.
 
 # Abstract
 
@@ -64,7 +71,7 @@ To quantify confounding by tumor purity, an epithelial-content proxy (mean log2 
 
 ### Statistics and reproducibility
 
-Analyses were performed in R 4.2.0 (2022-04-22; x86_64-apple-darwin17.0, Bioconductor 3.15) using data.table 1.14.4, readxl 1.4.3, limma 3.52.2, metafor 5.2.1, survival 3.5.7, jsonlite 1.8.8, CMSclassifier 1.0.0, org.Hs.eg.db 3.15.0, AnnotationDbi 1.58.0, hgu133a.db 3.13.0, and hgu133plus2.db 3.13.0; generalized linear mixed models were fitted with lme4 1.1.30; figures were produced with ggplot2 3.4.4, patchwork 1.1.3, scales 1.2.1, and ggrepel 0.9.4. Single-sample gene-set scoring used a custom implementation of the rank-based ssGSEA statistic of Barbie et al. because of GSVA version-compatibility constraints, with an independent benchmark in GSEApy 1.3.1 (Python). All tests were two-sided, and false-discovery rates were controlled by the BH method unless otherwise stated. The random seed was fixed (set.seed(123)) in all stochastic steps. All analysis scripts are publicly available [Evidence needed: repository URL].
+Analyses were performed in R 4.2.0 (2022-04-22; x86_64-apple-darwin17.0, Bioconductor 3.15) using data.table 1.14.4, readxl 1.4.3, limma 3.52.2, metafor 5.2.1, survival 3.5.7, jsonlite 1.8.8, CMSclassifier 1.0.0, org.Hs.eg.db 3.15.0, AnnotationDbi 1.58.0, hgu133a.db 3.13.0, and hgu133plus2.db 3.13.0; generalized linear mixed models were fitted with lme4 1.1.30; figures were produced with ggplot2 3.4.4, patchwork 1.1.3, scales 1.2.1, and ggrepel 0.9.4. Single-sample gene-set scoring used a custom implementation of the rank-based ssGSEA statistic of Barbie et al. because of GSVA version-compatibility constraints, with an independent benchmark in GSEApy 1.3.1 (Python). All tests were two-sided, and false-discovery rates were controlled by the BH method unless otherwise stated. The random seed was fixed (set.seed(123)) in all stochastic steps. All analysis scripts are publicly available at https://github.com/wontaoxmu-pixel/crc-organotropism.
 
 # Results
 
@@ -124,15 +131,15 @@ In conclusion, metastatic lesions in CRC retain organ-specific transcriptomic ni
 
 **Data availability:** All transcriptomic datasets are publicly available from the Gene Expression Omnibus (GSE190609, GSE50760, GSE225182, GSE41258, GSE41568). The MSK-MET cohort was accessed via cBioPortal [20,21]. Processed analysis tables are provided in the Supplementary Information.
 
-**Code availability:** All analysis scripts are publicly available at [Evidence needed: repository URL].
+**Code availability:** All analysis scripts are publicly available at https://github.com/wontaoxmu-pixel/crc-organotropism.
 
 **Acknowledgments:** The authors gratefully acknowledge the Gene Expression Omnibus, the Memorial Sloan Kettering–Metastatic Events and Tropisms (MSK-MET) consortium, and cBioPortal for making their data publicly available.
 
-**Funding:** [To be completed]
+**Funding:** This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
 
-**Conflict of interest:** [To be completed]
+**Conflict of interest:** The authors declare that they have no competing interests.
 
-**Author contributions:** [To be completed]
+**Author contributions:** Tao Wang: Conceptualization, Methodology, Software, Formal analysis, Data curation, Visualization, Writing – original draft, Writing – review & editing, Supervision, Project administration. Hao Yi: Data curation, Formal analysis, Investigation, Validation, Visualization, Writing – review & editing. Peng Qi: Investigation, Resources, Validation, Writing – review & editing. All authors read and approved the final manuscript.
 
 # References
 

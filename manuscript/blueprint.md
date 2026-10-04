@@ -152,4 +152,4 @@ In colorectal cancer (CRC), we show that metastatic lesions retain organ-specifi
 
 - 各 section 草稿：`manuscript/sections/00_title_abstract.md` … `05_figure_legends.md`
 - 汇总稿（主 agent 拼装）：`manuscript/main_manuscript.md`（2026-10-04 预审修订后为主稿唯一权威版本，sections 与本蓝图已同步）
-- 补充声明段（主 agent 写）：Data availability（GEO accession + MSK-MET cBioPortal）、Code availability（scripts/ 列表，repository URL 仍占位 `[Evidence needed]`）、Acknowledgments（数据库致谢，格式：The authors gratefully acknowledge ... for making their data publicly available.）
+- 补充声明段（主 agent 写）：Data availability（GEO accession + MSK-MET cBioPortal）、Code availability（scripts/ 列表；repository URL 已落实：https://github.com/wontaoxmu-pixel/crc-organotropism）、Acknowledgments（数据库致谢，格式：The authors gratefully acknowledge ... for making their data publicly available.）

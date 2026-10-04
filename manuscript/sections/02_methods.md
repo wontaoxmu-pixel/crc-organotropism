@@ -30,7 +30,7 @@ To quantify confounding by tumor purity, an epithelial-content proxy (mean log2 
 
 ### Statistics and reproducibility
 
-Analyses were performed in R 4.2.0 (2022-04-22; x86_64-apple-darwin17.0, Bioconductor 3.15) using data.table 1.14.4, readxl 1.4.3, limma 3.52.2, metafor 5.2.1, survival 3.5.7, jsonlite 1.8.8, CMSclassifier 1.0.0, org.Hs.eg.db 3.15.0, AnnotationDbi 1.58.0, hgu133a.db 3.13.0, and hgu133plus2.db 3.13.0; generalized linear mixed models were fitted with lme4 1.1.30; figures were produced with ggplot2 3.4.4, patchwork 1.1.3, scales 1.2.1, and ggrepel 0.9.4. Single-sample gene-set scoring used a custom implementation of the rank-based ssGSEA statistic of Barbie et al. because of GSVA version-compatibility constraints, with an independent benchmark in GSEApy 1.3.1 (Python). All tests were two-sided, and false-discovery rates were controlled by the BH method unless otherwise stated. The random seed was fixed (set.seed(123)) in all stochastic steps. All analysis scripts are publicly available [Evidence needed: repository URL].
+Analyses were performed in R 4.2.0 (2022-04-22; x86_64-apple-darwin17.0, Bioconductor 3.15) using data.table 1.14.4, readxl 1.4.3, limma 3.52.2, metafor 5.2.1, survival 3.5.7, jsonlite 1.8.8, CMSclassifier 1.0.0, org.Hs.eg.db 3.15.0, AnnotationDbi 1.58.0, hgu133a.db 3.13.0, and hgu133plus2.db 3.13.0; generalized linear mixed models were fitted with lme4 1.1.30; figures were produced with ggplot2 3.4.4, patchwork 1.1.3, scales 1.2.1, and ggrepel 0.9.4. Single-sample gene-set scoring used a custom implementation of the rank-based ssGSEA statistic of Barbie et al. because of GSVA version-compatibility constraints, with an independent benchmark in GSEApy 1.3.1 (Python). All tests were two-sided, and false-discovery rates were controlled by the BH method unless otherwise stated. The random seed was fixed (set.seed(123)) in all stochastic steps. All analysis scripts are publicly available at https://github.com/wontaoxmu-pixel/crc-organotropism.
 
 ---
 
@@ -48,7 +48,7 @@ Analyses were performed in R 4.2.0 (2022-04-22; x86_64-apple-darwin17.0, Biocond
 
 ### Assumptions or missing inputs
 - R version and package versions 占位已解决：正文现为 R 4.2.0（Bioconductor 3.15）+ data.table 1.14.4 / limma 3.52.2 / metafor 5.2.1 / survival 3.5.7 / lme4 1.1.30 等完整版本清单（预审修订时自 sessionInfo 补入）。
-- Repository URL for code availability unknown; placeholder `[Evidence needed: repository URL]` retained.
+- Repository URL resolved: https://github.com/wontaoxmu-pixel/crc-organotropism（public，2026-10-04 建立并推送）。
 - "芯片与 RNA-seq 分层后合并": script 12 pools all cohorts gene-wise in one REML model and reports platform-stratified results only in SI (blueprint §5); Methods phrased as "analyzed as platform strata before pooling, stratified results in Supplementary" to reconcile the instruction with the actual pipeline.
 - CMS 主检验升级为 GLMM（患者随机截距），样本级 Fisher 仅作描述——预审修订核心变更之一，与 Results §1 和摘要口径一致。
 - CMS RF was executed via a manual reproduction of classifyCMS.RF (script 13, package naImpute bug); described simply as "the random-forest classifier of CMSclassifier" — the workaround detail was omitted from the main text as immaterial to reproducibility, but can be added if desired.
@@ -70,4 +70,4 @@ Analyses were performed in R 4.2.0 (2022-04-22; x86_64-apple-darwin17.0, Biocond
 | Logistic model 1 (n=887) / model 2 (n=302) | blueprint §4.5; mskmet/revision_apc_logistic.tsv | Verified |
 | Cox n=1,136 (524 events); 同子集 n=405 (226 events) 含/不含负荷项; CNA n=177 exploratory; 左截断声明 | blueprint §4.5; script 19 | Verified |
 | Purity covariate = EPCAM/KRT8/KRT19 mean; retention-rate definition; 四标志物集归因; 外部签名 hypergeometric | script 16/18; blueprint §4.6 | Verified |
-| R/package versions 已落实; repository URL | sessionInfo 已补 / URL 仍缺 | URL placeholder `[Evidence needed]` retained |
+| R/package versions 已落实; repository URL 已落实（github.com/wontaoxmu-pixel/crc-organotropism） | sessionInfo 已补 / URL 已建库 | Resolved |

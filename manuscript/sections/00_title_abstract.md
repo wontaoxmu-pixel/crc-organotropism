@@ -4,11 +4,18 @@
 
 **Running title:** Niche imprint and APC depletion in CRC metastasis
 
-**Authors:** [Author list to be completed]
+**Authors:** Tao Wang, MD^1,†,\*^; Hao Yi^2,†^; Peng Qi, Prof.^1^
 
-**Affiliations:** [Affiliations to be completed]
+^†^These authors contributed equally to this work.
 
-**Corresponding author:** [Name, address, email to be completed]
+**Affiliations:**
+
+1. Department of Thyroid and Breast Surgery, Hubei No. 3 People's Hospital of Jianghan University, No. 26 Zhongshan Avenue, Qiaokou District, Wuhan 430033, Hubei, China
+2. Graduate School, Hubei University of Medicine, No. 30 Renmin South Road, Shiyan 442000, Hubei, China
+
+**ORCID:** Tao Wang: 0000-0001-9415-7524; Hao Yi: 0009-0007-7199-4291; Peng Qi: 0000-0002-2839-8933.
+
+**Corresponding author:** Tao Wang, MD, Department of Thyroid and Breast Surgery, Hubei No. 3 People's Hospital of Jianghan University, No. 26 Zhongshan Avenue, Qiaokou District, Wuhan 430033, Hubei, China. Email: wangt_zsyy@126.com.
 
 # Abstract
 
